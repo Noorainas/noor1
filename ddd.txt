@@ -1,0 +1,15 @@
+// DSCH 2.7a
+// 04-12-2023 15:29:45
+// C:\Users\user\Desktop\ddd.sch
+
+module ddd( out1);
+ output out1;
+ pmos #(17) pmos(vdd,w1,w1); // 5u 0.12u
+ nmos #(38) nmos(vss,w1,w2); // 5u 0.12u
+ nmos #(24) nmos(out1,vss,w3); // 5u 0.12u
+ pmos #(24) pmos(out1,vdd,w1); // 5u 0.12u
+endmodule
+
+// Simulation parameters in Verilog Format
+
+// Simulation parameters
